@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NovidadesCSharp73_80
 {
-    class IgualdadeTuples : ITesteRecursoDaLinguagem
+    class IgualdadeTuples
     {
         public string NomeRecurso => "Operador == e != com tuples";
 

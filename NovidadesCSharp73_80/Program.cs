@@ -6,16 +6,18 @@ namespace NovidadesCSharp73_80
     {
         static void Main(string[] args)
         {
-            new ReadtribuicaoEmRefs();
-            ExecutarTeste(new IgualdadeTuples());
+            var teste = new AtributosEmBackfield[] {
+                new AtributosEmBackfield(),
+                new AtributosEmBackfield(),
+                new AtributosEmBackfield(),
+                new AtributosEmBackfield(),
+                new AtributosEmBackfield()
+            };
+
+            teste.ToString();
+
 
             Console.ReadLine();
-        }
-
-        static void ExecutarTeste(ITesteRecursoDaLinguagem testeRecursoDaLinguagem)
-        {
-            Console.WriteLine($"Executando: {testeRecursoDaLinguagem.NomeRecurso}");
-            testeRecursoDaLinguagem.Executar();
         }
     }
 }

@@ -5,17 +5,12 @@ using System.Text;
 
 namespace NovidadesCSharp73_80
 {
-    class ExpressionVariables : ITesteRecursoDaLinguagem
+    class ExpressionVariables
     {
         public string NomeRecurso => "Expression Variables";
 
         public readonly bool AplicacalPossuiPortaAlta =
             int.TryParse(ConfiguracoesAplicacaoWeb.porta, out var numeroPorta) && numeroPorta > 3000;
-
-        public void Executar()
-        {
-            throw new NotImplementedException();
-        }
 
         public void ComQueries()
         {
